@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Pizza order</legend>
+            <br>
+            <input required type="text" name="Your Name" placeholder="Your Name:" minlength="3" maxlength="10">
+            <br>
+            <br>
+            <input required type="email" name="Your Email" placeholder="Your email:">
+            <br>
+            <br>
+            <label>Topping:</label>
+            <input type="radio" value="Supreme" name="Topping" checked/>
+            <span>Supreme</span>
+            <input type="radio" value="Vegetarian" name="Topping"/>
+            <span>Vegetarian</span>
+            <input type="radio" value="Hawaian" name="Topping"/>
+            <span>Hawaian</span>
+            <br>
+            <br>
+            <label>Sauce:</label>
+            <select name="Sosuri">
+                <option value="Tomato" selected>Tomato</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Mustard">Mustard</option>
+            </select>
+            <br>
+            <br>
+            <label>Extras:</label>
+            <input type="checkbox" name="Cheese" id="Cheese" checked>
+            <label for="Cheese">Cheese</label>
+            <input type="checkbox" name="Onions" id="Onions">
+            <label for="Onions">Onions</label>
+            <input type="checkbox" name="Olives" id="Olives">
+            <label for="Olives">Olives</label>
+            <br>
+            <br>
+            <br>
+            <label>Number of pizzas:</label>
+            <input type="number" min="1" max="7">
+            <br>
+            <br>
+            <label>Delivery instructions:</label> <br>
+            <textarea required name="textarea" id="" cols="150" rows="5"></textarea>
+            <br>
+            <br>
+            <label>Delivery Date:</label>
+            <input type="date">
+            <br>
+            <br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Send Order">
+        </fieldset>
+    </form>
+</body>
+</html>
