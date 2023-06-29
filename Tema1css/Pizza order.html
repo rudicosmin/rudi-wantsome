@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pizzaorder.css">
     <title>LogIn</title>
 </head>
 <body>
@@ -10,49 +11,62 @@
         <fieldset>
             <legend>Pizza order</legend>
             <br>
-            <input required type="text" name="Your Name" placeholder="Your Name:" minlength="3" maxlength="10">
+            <label for="your-name">Your name:</label>
+            <input type="text" name="Your Name" id="your-name" minlength="3" maxlength="10" required>
             <br>
             <br>
-            <input required type="email" name="Your Email" placeholder="Your email:">
+            <label for="email">Email</label>
+            <input required type="email" name="Your Email" id="email">
             <br>
             <br>
-            <label>Topping:</label>
-            <input type="radio" value="Supreme" name="Topping" checked/>
-            <span>Supreme</span>
-            <input type="radio" value="Vegetarian" name="Topping"/>
-            <span>Vegetarian</span>
-            <input type="radio" value="Hawaian" name="Topping"/>
-            <span>Hawaian</span>
+        <div>
+            <Span>Topping:</Span>
+            <input type="radio" id="Supreme" name="Topping" checked/>
+            <label for="Supreme">Supreme</label>
+            <input type="radio" id="Vegetarian" name="Topping"/>
+            <label for="Vegetarian">Vegetarian</label>
+            <input type="radio" id="Hawaian" name="Topping"/>
+            <label for="Hawaian">Hawaian</label>
+        </div>
             <br>
             <br>
-            <label>Sauce:</label>
+        <div>
+            <span>Sauce:</span>
             <select name="Sosuri">
                 <option value="Tomato" selected>Tomato</option>
                 <option value="Mayo">Mayo</option>
                 <option value="Mustard">Mustard</option>
             </select>
+        </div>
             <br>
             <br>
-            <label>Extras:</label>
+        <div>
+            <span>Extras:</span>
             <input type="checkbox" name="Cheese" id="Cheese" checked>
             <label for="Cheese">Cheese</label>
             <input type="checkbox" name="Onions" id="Onions">
             <label for="Onions">Onions</label>
             <input type="checkbox" name="Olives" id="Olives">
             <label for="Olives">Olives</label>
+        </div>
             <br>
             <br>
-            <br>
-            <label>Number of pizzas:</label>
-            <input type="number" min="1" max="7">
-            <br>
-            <br>
-            <label>Delivery instructions:</label> <br>
-            <textarea required name="textarea" id="" cols="150" rows="5"></textarea>
+        <div>
+            <span>Number of pizzas:</span>
+            <input type="number" id="numar" min="1" max="7" value="1">
+        </div>
             <br>
             <br>
-            <label>Delivery Date:</label>
-            <input type="date">
+        <div>
+            <p>Delivery instructions:</p>
+            <textarea required name="textarea" cols="150" rows="5"></textarea>
+        </div>    
+            <br>
+            <br>
+        <div>
+            <span>Data Livrare</span>
+            <input type="date"">
+        </div>
             <br>
             <br>
             <input type="reset" value="Reset">
