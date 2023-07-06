@@ -1,0 +1,32 @@
+.parinte {
+    width: 600px;
+    height: 600px;
+    background-color: lightgrey;
+}
+ .copil1 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transform: translate(100%, 100%);
+ }
+
+ .copil2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+ }
+
+
+ .copil3 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+ }
+
+ /* Referinta: https://blog.hubspot.com/website/center-div-css */
